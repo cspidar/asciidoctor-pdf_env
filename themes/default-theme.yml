@@ -1,0 +1,527 @@
+font:
+  catalog:
+    # Noto Sans supports Latin, Latin-1 Supplement, Latin Extended-A, Greek, Cyrillic, Vietnamese & an assortment of symbols
+    Noto Sans:
+      normal: NotoSansCJKkr-Regular-TTF.ttf
+      bold: NotoSansCJKkr-Bold-TTF.ttf
+      italic: NotoSansCJKkr-Regular-TTF.ttf
+      bold_italic: NotoSansCJKkr-Bold-TTF.ttf
+    Segment: Autonics_11segment_191209.TTF
+    Monospace:
+      normal: D2Coding-Ver1.3.2-20180524.ttf
+      regular: D2Coding-Ver1.3.2-20180524.ttf
+      bold: D2Coding-Ver1.3.2-20180524.ttf
+      italic: D2Coding-Ver1.3.2-20180524.ttf
+      bold_italic: D2Coding-Ver1.3.2-20180524.ttf
+    # M+ 1mn supports ASCII and the circled numbers used for conums
+    # M+ 1mn:
+    #   normal: 본고딕KR-Light.ttf
+    #   bold: 본고딕KR-Medium.ttf
+    #   italic: 본고딕KR-Light.ttf
+    #   bold_italic: 본고딕KR-Medium.ttf
+    Roboto:
+      regular: ROBOTO-REGULAR.TTF
+      bold: ROBOTO-BOLD.TTF
+      medium: ROBOTO-MEDIUM.TTF
+      condensed-bold: ROBOTOCONDENSED-BOLD.TTF
+      condensed-light: ROBOTOCONDENSED-LIGHT.TTF
+    7segment:
+      regular: Autonics_7segment_191209.TTF
+    11segment:
+      regular: Autonics_11segment_191209.TTF
+    12segment:
+      regular: Autonics_12segment_191209.TTF
+    16segment:
+      regular: Autonics_16segment_210419.TTF
+page:
+  background_color: FFFFFF
+  layout: portrait
+  initial_zoom: Fit
+  margin: [20mm, 10mm, 20mm, 10mm]
+  # [top,right,bottom,left]
+  # margin_top: 20mm
+  # margin_bottom: 5mm
+  margin_inner: 20mm
+  margin_outer: 10mm
+  size: A5
+  numbering:
+    start-at: title
+base:
+  align: left
+  font_color: 231815
+  # font_color: 333333
+  font_family: Noto Sans
+  font_size: 7pt
+  line_height_length: 15pt
+  line_height: 1.715
+  letter-spacing: -20pt
+  font_size_large: $base_font_size * 1.1
+  # round = 반올림, floor = 올림, ceil = 내림
+  font_size_small: $base_font_size * 0.9
+  font_size_min: $base_font_size * 0.8
+  font_style: normal
+  border_color: EEEEEE
+  border_radius: 4
+  border_width: 0.5
+link:
+  font_color: 262626
+  font_family: Noto Sans
+literal:
+  font_color: 231815
+  # font_color: B12146
+  font_family: Noto Sans
+button:
+  # content: "[%s]"
+  content: "%s"
+  background-color: dddddd
+  border-radius: 1
+  border-offset: 1.5
+  font_style: bold
+  font_size: $base_font_size * 0.9
+key:
+  background_color: F5F5F5
+  border_color: CCCCCC
+  border_offset: 2
+  border_radius: 2
+  border_width: 0.25
+  font_family: $literal_font_family
+  font_style: bold
+  separator: "\u202f+\u202f"
+mark:
+  background_color: FFFF00
+  border_offset: 1
+menu:
+  caret_content: ' <font size="1em"><color rgb="686868">»</color></font> '
+heading:
+  align: left
+  font_color: $base_font_color
+  font_style: bold
+  h1:
+    font_size: 14pt
+    margin-bottom: 10mm
+  h2:
+    font_size: 14pt
+    margin-bottom: 9mm
+  h3:
+    font_size: 11pt
+    margin-top: 6mm
+    margin-bottom: 1.5mm
+  h4:
+    font_size: 9.5pt
+    margin-top: 3.5mm
+    margin-bottom: 1.3mm
+  h5:
+    font_size: 8.5pt
+    margin-top: 2.5mm
+    margin-bottom: 1.3mm
+  # h3:
+  #   font_size: 11pt
+  #   margin-top: 3.7mm
+  #   margin-bottom: 1.5mm
+  # h4:
+  #   font_size: 9pt
+  #   margin-top: 3.2mm
+  #   margin-bottom: 1mm
+  # h5:
+  #   font_size: 8.3pt
+  #   margin-top: 1.6mm
+  #   margin-bottom: 0.6mm
+  h6:
+    font_size: 8.2pt
+    margin-top: 0.7mm
+    margin-bottom: 0.5mm
+  h7:
+    font_size: 7.7pt
+    margin-top: 0.5mm
+    margin-bottom: 0.3mm
+  # h1:
+  #   font_size: 14pt
+  #   margin-bottom: 10mm
+  # h2:
+  #   font_size: 14pt
+  #   margin-bottom: 10mm
+  # h3:
+  #   font_size: 10pt
+  #   margin-top: 3mm
+  #   margin-bottom: 1.5mm
+  # h4:
+  #   font_size: 9pt
+  #   margin-top: 1.8mm
+  #   margin-bottom: 1.5mm
+  # h5:
+  #   font_size: 8.5pt
+  #   margin-top: 1.7mm
+  #   margin-bottom: 1.5mm
+  # h6:
+  #   font_size: 8pt
+  #   margin-top: 1.5mm
+  #   margin-bottom: 1.5mm
+  # h7:
+  #   font_size: 8pt
+  #   margin-top: 1.5mm
+  #   margin-bottom: 1.5mm
+  # line_height: 1.3
+  # margin_top: $base_line_height_length * 0.3
+  # margin_bottom: $base_line_height_length * 0.7
+  # min_height_after: $base_line_height_length * 1.2
+title_page:
+  # background-image: image:.\images\title-bg_A5.png[]
+  align: left
+  logo:
+    top: 10%
+  title:
+    font_family: Roboto
+    font_style: bold
+    font_size: 34pt
+    font_color: 231815
+    letter-spacing: -5pt
+    line_height: 1
+    font-kerning: normal
+    top: 40%
+  subtitle:
+    font_family: Noto Sans
+    font_style: bold
+    font_size: 10pt
+    font_color: 231815
+    letter-spacing: -25pt
+    line_height: 1
+    margin-top: 20
+  # authors:
+  #   display: none
+  #   margin_top: $base_font_size * 1.25
+  #   font_size: $base_font_size_large
+  #   font_color: 181818
+  revision:
+    font_family: Roboto
+    font_size: 7pt
+    margin-top: 10
+    # top: 70%
+    # font_size: $base_font_size * 0.9
+    # font_style: bold
+    line_height: 1
+# block 요소에 많은것들이 포함되어 있음
+# admonition
+# example
+# quote
+# verse
+# sidebar
+# image
+# listing
+# literal
+# table
+block:
+  margin_top: 0
+  # margin_bottom: $base_line_height_length / 4.6
+  # margin_bottom: $base_line_height_length / 3
+  # margin_bottom: $base_line_height_length / 2.3
+  margin_bottom: $base_line_height_length / 2
+caption:
+  align: left
+  font_size: $base_font_size * 1
+  font_style: bold
+  margin_inside: $base_line_height_length / 8
+  margin_outside: 0
+  # margin_outside: $base_line_height_length / 15
+lead:
+  font_size: $base_font_size_large
+  line_height: 1.4
+abstract:
+  font_color: 5C6266
+  font_size: $lead_font_size
+  line_height: $lead_line_height
+  font_style: normal
+  first_line_font_style: bold
+  title:
+    align: center
+    font_color: $heading_font_color
+    font_size: $heading_h4_font_size
+    font_style: $heading_font_style
+admonition:
+  # icon:
+  #   tip:
+  #     size: 10
+  #   warning:
+  #     size: 10
+  #   important:
+  #     size: 10
+  #   caution:
+  #     size: 10
+  #   note:
+  #     size: 10
+  column_rule_color: 231815
+  # column_rule_color: 797979
+  column_rule_style: dotted
+  column_rule_width: $base_border_width
+  padding: [3pt, 10, 3pt, 10]
+  # [top,right,bottom,left]
+  # padding: [0, $base_line_height_length, 0, $base_line_height_length]
+  font_size: $base_font_size
+  label:
+    text_transform: uppercase
+    font-size: $base_font_size * 1.2
+    font_style: bold
+    vertical-align: center
+    min-width: 15
+blockquote:
+  font_size: $base_font_size_large
+  border_color: $base_border_color
+  border_width: 0
+  border_left_width: 5
+  padding:
+    [
+      0,
+      $base_line_height_length,
+      $block_margin_bottom * -0.75,
+      $base_line_height_length + $blockquote_border_left_width / 2,
+    ]
+  cite_font_size: $base_font_size_small
+  cite_font_color: 999999
+verse:
+  font_size: $blockquote_font_size
+  border_color: $blockquote_border_color
+  border_width: $blockquote_border_width
+  border_left_width: $blockquote_border_left_width
+  padding: $blockquote_padding
+  cite_font_size: $blockquote_cite_font_size
+  cite_font_color: $blockquote_cite_font_color
+code:
+  font_color: $base_font_color
+  font_family: Monospace
+  font_size: ceil($base_font_size)
+  padding: $code_font_size
+  # line_height: 1.25
+  line_height: 1
+  line_gap: 3.8
+  background_color: F5F5F5
+  border_color: CCCCCC
+  border_radius: $base_border_radius
+  border_width: 0.75
+  callout-list:
+    margin-top: 0
+conum:
+  font_family: $literal_font_family
+  font_color: $literal_font_color
+  font_size: $base_font_size
+  # line_height: 4 / 3
+  glyphs: circled
+example:
+  border_color: $base_border_color
+  border_radius: $base_border_radius
+  border_width: 0.75
+  background_color: $page_background_color
+  padding:
+    [
+      $base_line_height_length / 4,
+      $base_line_height_length / 2,
+      $base_line_height_length / 4,
+      $base_line_height_length / 2,
+    ]
+  # padding:
+  #   [
+  #     $base_line_height_length,
+  #     $base_line_height_length,
+  #     0,
+  #     $base_line_height_length,
+  #   ]
+image:
+  border-color: 8b8b8b
+  border-width: 0
+  caption:
+    max-width: fit-content
+    align: center
+  align: left
+  width: 50%
+  # pdfwidth: 100%[fit=line]
+svg:
+  fallback_font_family: Noto Sans
+prose:
+  margin_top: $block_margin_top
+  margin_bottom: $block_margin_bottom
+sidebar:
+  background_color: FFFFFF
+  border_color: E1E1E1
+  border_radius: $base_border_radius
+  border_width: $base_border_width
+  padding:
+    [
+      $base_line_height_length,
+      $base_line_height_length * 1.25,
+      0,
+      $base_line_height_length * 1.25,
+    ]
+  title:
+    align: left
+    font_color: $heading_font_color
+    font_size: $heading_h4_font_size
+    font_style: $heading_font_style
+thematic_break:
+  border_color: $base_border_color
+  border_style: solid
+  border_width: $base_border_width
+  # margin_top: $base_line_height_length * 0.15
+  # margin_bottom: $base_line_height_length * 0.5
+  margin_top: $base_line_height_length * 0.07
+  margin_bottom: $base_line_height_length * 0.5
+ulist:
+  # marker:
+  # line-height: $base_line_height * 2
+  line-height: 1
+  marker:
+    # line-height: $base_line_height / 2
+description_list:
+  term_font_style: bold
+  # term-line-height: 1
+  term_spacing: $base_line_height_length / 15
+  description_indent: $base_line_height_length / 2
+  indent: 50
+outline_list:
+  indent: $base_line_height_length / 2
+  item_spacing: $base_line_height_length / 4
+  # item_spacing: $base_line_height_length / 2
+  # * 리스트 줄간격
+table:
+  background_color: FFFFFF
+  # border_color: DDDDDD
+  # border_color: 797979
+  border_color: 8b8b8b
+  # border_width: $base_border_width
+  border_width: 0.25
+  cell_padding: [1, 5, 1, 5]
+  # [top,right,bottom,left]
+  font_size: $base_font_size * 0.95
+  caption-max-width: none
+  head:
+    font_style: bold
+    font-kerning: normal
+    border_bottom_width: $base_border_width
+    background-color: EFEFEF
+  body:
+    stripe_background_color: F9F9F9
+  foot:
+    background_color: F0F0F0
+toc:
+  # margin_top: 10mm
+  font-size: 7pt
+  indent: 5mm
+  h2-font-style: bold
+  h3-font-style: normal
+  line_height: 2.0
+  dot_leader:
+    font_color: 231815
+footnotes:
+  font_size: round($base_font_size * 0.8)
+  item_spacing: $outline_list_item_spacing / 2
+header:
+#   #페이지 상단 여백 컨텐츠
+#   border_color: A9A9A9
+#   border_width: 0.25
+#   font_size: $base_font_size_small
+#   height: 0.7in
+#   vertical_align: bottom
+#   recto:
+#     right:
+#       content: image:.\images\logo.png[width=80]
+#   verso:
+#     left:
+#       content: $header-recto-right-content
+footer:
+  #페이지 하단 여백 컨텐츠
+  font_size: 6pt
+  # border_color: 595757
+  # border_width: 0.25
+  height: $base_line_height_length * 2.5
+  line_height: 1
+  padding: [$base_line_height_length / 2, 1, 0, 1]
+  vertical_align: top
+  recto:
+    right:
+      content: "{section-or-chapter-title} 　 {page-number}"
+  verso:
+    left:
+      content: "{page-number} 　 **Autonics** | {document-title}"
+index:
+  columns: 2
+role:
+  # role:
+  #   red:
+  #     font-color: #ff0000
+  # Error text is shown in [.red]#red#. 에서 [.red] 와 같은 커스텀 문법 생성
+  prefaceh3:
+    font_size: $heading_h3_font_size
+    font_style: bold
+    # border-color: 999999
+    # border-width: 0.5
+    # # border-color: ffffff
+    # border-offset: 30
+    # font_color: 999999
+  #크기
+  h2:
+    font_size: $heading_h2_font_size
+    margin_bottom: $heading_h2_margin_bottom
+    font_style: bold
+  h3:
+    font_size: $heading_h3_font_size
+    margin-top: $heading_h3_margin-top
+    margin_bottom: $heading_h3_margin_bottom
+    font_style: bold
+  h4:
+    font_size: $heading_h4_font_size
+    margin-top: $heading_h4_margin-top
+    margin_bottom: $heading_h4_margin_bottom
+    font_style: bold
+  h5:
+    font_size: $heading_h5_font_size
+    margin-top: $heading_h5_margin-top
+    margin_bottom: 0
+    font_style: bold
+  h6:
+    font_size: $heading_h6_font_size
+    margin-top: $heading_h6_margin-top
+    margin_bottom: $heading_h6_margin_bottom
+    font_style: bold
+  large:
+    font_size: $base_font_size * 1.1
+    font_style: bold
+  small:
+    font_size: $base_font_size * 0.8
+    # line_height_length: $base_line_height_length * 0.3
+    # line_height: $base_line_height * 0.3
+  #폰트
+  7seg:
+    font_family: 7segment
+    font_style: regular
+  11seg:
+    font_family: 11segment
+    font_style: regular
+  12seg:
+    font_family: 12segment
+    font_style: regular
+  16seg:
+    font_family: 16segment
+    font_style: regular
+  seg7:
+    font_family: 7segment
+    font_style: regular
+  seg11:
+    font_family: 11segment
+    font_style: regular
+  seg12:
+    font_family: 12segment
+    font_style: regular
+  seg16:
+    font_family: 16segment
+    font_style: regular
+  mono:
+    font_family: Monospace
+    font_style: regular
+  #색상
+  red:
+    font-color: FF0000
+  blue:
+    font-color: 0000FF
+  gray:
+    font-color: 808080
+  #양식
+  wide:
+    letter_spacing: 5px
+    padding: [0px, 2px, 0px, 2px]

@@ -1,0 +1,1 @@
+C:\Ruby27-x64\lib\ruby\gems\2.7.0\gems\asciidoctor-pdf-1.6.0\data
